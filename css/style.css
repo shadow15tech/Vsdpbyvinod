@@ -373,7 +373,7 @@
 
 /*** Section Title ***/
 .section-title {
-    position: relative;
+    position: relative; 
     display: inline-block;
     text-transform: uppercase;
     font-weight: 600;
