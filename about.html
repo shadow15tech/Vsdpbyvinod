@@ -29,6 +29,10 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+
+
+    
 </head>
 
 <body>
@@ -107,8 +111,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav me-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link active">About</a>
                         <a href="donation.html" class="nav-item nav-link">Donation</a>
                         
                                 <a href="gallery.html" class="nav-item nav-link">Gallery</a>
@@ -364,7 +368,7 @@
                     <a class="btn btn-primary py-3 px-4 me-3" href="about.html">
                         Learn More
                     </a>
-                    <a class="btn btn-secondary py-3 px-4" href="donate.html">
+                    <a class="btn btn-secondary py-3 px-4" href="donation.html">
                         Donate Now
                     </a>
                 </div>
@@ -376,57 +380,75 @@
 </div>
 <!-- Features End -->
 
-   
-<!-- Team Start -->
+   <!-- Founder Start -->
 <div class="container-fluid py-5">
     <div class="container">
-        <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
             <p class="section-title bg-white text-center text-primary px-3">Founder</p>
             <h1 class="display-6 mb-4">संस्थापक परिचय</h1>
         </div>
 
-        <div class="row justify-content-center g-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
 
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                <div class="team-item d-flex h-100 p-4">
+                <div class="founder-card shadow-lg rounded overflow-hidden">
 
-                    <!-- Founder Detail -->
-                    <div class="team-detail pe-4">
-                        <img class="img-fluid mb-4" src="img/Founder photo.jpeg" alt="Vinod Kumar Deshwal">
+                    <div class="row g-0 align-items-center">
 
-                        <h3>Mr. Vinod Kumar Deshwal</h3>
-                        <span>Founder & Spiritual Guide</span>
+                        <!-- Left Image -->
+                        <div class="col-md-4 founder-image-wrapper">
+                            <img src="img/Founder photo.jpeg" 
+                                 alt="Vinod Kumar Deshwal"
+                                 class="img-fluid founder-image">
+                        </div>
 
-                        <p class="mt-3 mb-0">
-                            श्री विनोद कुमार देशवाल, M.Sc. (Chemistry), एक अनुभवी 
-                            Health & Nutrition Consultant हैं जिनके पास 35+ वर्षों का अनुभव है। 
-                            वे ISO एवं GMP Auditor रहे हैं तथा health, pharmaceutical एवं 
-                            product innovation sector में नेतृत्व कर चुके हैं।
-                            <br><br>
-                            धार्मिक एवं सामाजिक क्षेत्र में उन्होंने Vyas Ashram Seva Samiti 
-                            में Joint Secretary के रूप में सेवा दी तथा विभिन्न सांस्कृतिक 
-                            एवं धार्मिक कार्यक्रमों का संचालन किया। 
-                            उनका जीवन उद्देश्य Sanatan Dharma, संस्कार, शिक्षा और सेवा 
-                            के माध्यम से समाज को सशक्त एवं नैतिक रूप से समृद्ध बनाना है।
-                        </p>
+                        <!-- Right Content -->
+                        <div class="col-md-8 p-4 p-lg-5">
 
-                    </div>
+                            <h3 class="fw-bold mb-1">Mr. Vinod Kumar Deshwal</h3>
+                            <p class="text-primary fw-semibold mb-3">
+                                Founder & Spiritual Guide
+                            </p>
 
-                    <!-- Social Links -->
-                    <div class="team-social bg-light d-flex flex-column justify-content-center flex-shrink-0 p-4">
-                        <a class="btn btn-square btn-primary my-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#"><i class="fab fa-x-twitter"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#"><i class="fab fa-youtube"></i></a>
+                            <p class="mb-3">
+                                श्री विनोद कुमार देशवाल, <strong>M.Sc. (Chemistry)</strong>, 
+                                एक अनुभवी Health & Nutrition Consultant हैं जिनके पास 
+                                35+ वर्षों का professional अनुभव है। 
+                                वे ISO एवं GMP Auditor रहे हैं तथा health, pharmaceutical 
+                                एवं product innovation sector में leadership कर चुके हैं।
+                            </p>
+
+                            <p>
+                                धार्मिक एवं सामाजिक क्षेत्र में उन्होंने 
+                                Vyas Ashram Seva Samiti में Joint Secretary के रूप में सेवा दी। 
+                                उनका जीवन उद्देश्य Sanatan Dharma, संस्कार, शिक्षा और सेवा 
+                                के माध्यम से समाज को सशक्त एवं नैतिक रूप से समृद्ध बनाना है।
+                            </p>
+
+                            <!-- Social Links -->
+                            <div class="mt-4">
+                                <a class="btn btn-primary btn-sm me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm me-2" href="#"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-primary btn-sm me-2" href="#"><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-primary btn-sm" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
-            </div>
 
+            </div>
         </div>
+
     </div>
 </div>
-<!-- Team End -->
+<!-- Founder End -->
+
+
+
 
   <!-- Newsletter Start -->
 <div class="container-fluid bg-primary py-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -514,7 +536,7 @@
                 <a class="btn btn-link" href="about.html">About Us</a>
                 <a class="btn btn-link" href="projects.html">Our Projects</a>
                 <a class="btn btn-link" href="gallery.html">Gallery</a>
-                <a class="btn btn-link" href="donate.html">Donate</a>
+                <a class="btn btn-link" href="donation.html">Donate</a>
                 <a class="btn btn-link" href="contact.html">Contact Us</a>
             </div>
 

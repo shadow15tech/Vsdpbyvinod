@@ -29,6 +29,91 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+<style>
+
+/* Navbar Fix */
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+/* Gallery Section */
+.gallery-section {
+    background: #fff8f0;
+    padding: 80px 0;
+}
+
+.gallery-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: #d35400;
+    text-align: center;
+}
+
+.gallery-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 60px;
+}
+
+/* Grid Layout */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Card */
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* 800x600 Ratio */
+.gallery-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+/* Hover Zoom */
+.gallery-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Overlay */
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(211,84,0,0.9), transparent);
+    color: #fff;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay h5 {
+    margin: 0;
+    font-weight: 600;
+}
+
+@media (max-width:768px){
+    .gallery-title{
+        font-size:28px;
+    }
+}
+
+</style>
 </head>
 
 <body>
@@ -111,9 +196,9 @@
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="donation.html" class="nav-item nav-link">Donation</a>
                         
-                                <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                                <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
                               
-                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="d-none d-lg-flex ms-auto">
                         <a class="btn btn-square btn-dark ms-2" href=""><i class="fab fa-twitter"></i></a>
@@ -128,149 +213,78 @@
     <!-- Navbar End -->
 
 
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-4">
-            <h1 class="display-3 animated slideInDown">Contact</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                   
-                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <!-- Page Header End -->
-
-
-    <!-- Video Start -->
-    <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-lg-11">
-                    <div class="h-100 py-5 d-flex align-items-center">
-                        <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https:/" data-bs-target="#videoModal">
-                            <span></span>
-                        </button>
-                        <h3 class="ms-5 mb-0">“आइए, मिलकर धर्म, सेवा और संस्कार के माध्यम से ऐसा समाज बनाएँ जहाँ प्रत्येक व्यक्ति को उन्नति और सम्मानपूर्ण जीवन का अवसर प्राप्त हो।”</h3>
-                    </div>
-                </div>
-                <!-- <div class="d-none d-lg-block col-lg-1">
-                    <div class="h-100 w-100 bg-secondary d-flex align-items-center justify-content-center">
-                        <span class="text-white" style="transform: rotate(-90deg);">Scroll Down</span>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </div>
-    <!-- Video End -->
-
-
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                            allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
-<!-- Contact Start -->
-<div class="container-fluid py-5">
+<!-- ================= GALLERY START ================= -->
+<section class="gallery-section">
     <div class="container">
-        <div class="row g-5">
 
-            <!-- Left Side Map -->
-            <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                <p class="section-title bg-white text-start text-primary pe-3">Contact Us</p>
-                <h1 class="display-6 mb-4 wow fadeIn" data-wow-delay="0.2s">
-                    Get in Touch With Vishva Sanatan Dharam Parishad
-                </h1>
+        <h2 class="gallery-title">Our Gallery</h2>
+        <p class="gallery-subtitle">
+            धर्म, सेवा एवं संस्कार से जुड़े प्रेरणादायक क्षण
+        </p>
 
-                <iframe class="w-100"
-                    src="https://www.google.com/maps?q=251/10%20Pratap%20Enclave%20Jaipur&output=embed"
-                    frameborder="0"
-                    style="height: 410px; border:0;"
-                    allowfullscreen=""
-                    aria-hidden="false"
-                    tabindex="0">
-                </iframe>
+        <div class="gallery-grid">
+
+            <div class="gallery-card">
+                <img src="img/Gallery section/Gallery image 1.jpeg" alt="">
+                <div class="gallery-overlay"><h5></h5></div>
             </div>
 
-            <!-- Right Side Form -->
-            <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
-
-                <h4 class="lh-base mb-4">
-                    For any queries related to donation, seva activities, 
-                    events or partnerships, please feel free to contact us.
-                </h4>
-
-                <form>
-
-                    <div class="row g-3">
-
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                <label for="name">Your Name</label>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                <label for="email">Your Email</label>
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                <label for="subject">Subject</label>
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control"
-                                    placeholder="Leave your message"
-                                    id="message"
-                                    style="height: 250px">
-                                </textarea>
-                                <label for="message">Your Message</label>
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <button class="btn btn-primary py-3 px-4" type="submit">
-                                Send Message
-                            </button>
-                        </div>
-
-                    </div>
-
-                </form>
-
+            <div class="gallery-card">
+                <img src="img/Gallery section/Gallery image 2.jpeg" alt="">
+                <div class="gallery-overlay"><h5></h5></div>
             </div>
+
+            <div class="gallery-card">
+                <img src="img/Gallery section/Gallery image 3.jpeg" alt="">
+                <div class="gallery-overlay"><h5></h5></div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="img/Gallery section/Gallery image 4.jpeg" alt="">
+                <div class="gallery-overlay"><h5></h5></div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="img/Gallery section/Gallery image 5.jpeg" alt="">
+                <div class="gallery-overlay"><h5></h5></div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="img/Gallery section/Gallery image 6.jpeg" alt="">
+                <div class="gallery-overlay"><h5></h5></div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="img/Gallery section/Gallery image 7.jpeg" alt="">
+                <div class="gallery-overlay"><h5></h5></div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="img/Gallery section/Gallery image 8.jpeg" alt="">
+                <div class="gallery-overlay"><h5></h5></div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="img/Gallery section/Gallery image 9.jpeg" alt="">
+                <div class="gallery-overlay"><h5></h5></div>
+            </div>
+
+            <div class="gallery-card">
+                <img src="img/Gallery section/Gallery image 10.jpeg" alt="">
+                <div class="gallery-overlay"><h5></h5></div>
+            </div>
+
+ <div class="gallery-card">
+                <img src="img/Gallery section/Gallery image 11.jpeg" alt="">
+                <div class="gallery-overlay"><h5></h5></div>
+            </div>
+
 
         </div>
+
     </div>
-</div>
-<!-- Contact End -->
-
-
+</section>
+<!-- ================= GALLERY END ================= -->
   <!-- Newsletter Start -->
 <div class="container-fluid bg-primary py-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container">

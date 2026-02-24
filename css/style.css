@@ -210,7 +210,7 @@
 }
 
 .header-carousel::before {
-    content: "ॐ";
+    content: "ॐ,ॐ, ";
     position: absolute;
     top: 50%;
     left: 30%;
@@ -946,5 +946,156 @@ a:hover {
     
     .header-carousel::before {
         font-size: 10rem;
+    }
+}
+
+
+
+
+
+
+/* 
+FOR GALLERY */
+
+
+/* ==============================
+   NAVBAR FIX (Overlap Issue Fix)
+============================== */
+
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+
+
+/* ==============================
+   GALLERY SECTION
+============================== */
+
+.gallery-section {
+    background: #fff8f0;
+    padding: 80px 0;
+}
+
+.gallery-header {
+    margin-bottom: 50px;
+}
+
+.gallery-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: #d35400;
+}
+
+.gallery-subtitle {
+    color: #666;
+    font-size: 16px;
+}
+
+
+/* Grid Layout */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+
+/* Card Styling */
+
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+
+/* Image – 800x600 Ratio (4:3) */
+
+.gallery-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+
+/* Hover Zoom */
+
+.gallery-card:hover img {
+    transform: scale(1.1);
+}
+
+
+/* Overlay Effect */
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(211,84,0,0.9), transparent);
+    color: #fff;
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay h5 {
+    margin: 0;
+    font-weight: 600;
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .gallery-title {
+        font-size: 28px;
+    }
+}
+
+
+
+
+/* FOUNDER CSS */
+
+
+/* Founder Card Design */
+.founder-card {
+    background: #ffffff;
+    border-left: 6px solid #f57c00;
+    transition: 0.4s ease;
+}
+
+.founder-card:hover {
+    transform: translateY(-6px);
+}
+
+.founder-image-wrapper {
+    background: #f8f9fa;
+    text-align: center;
+    padding: 25px;
+}
+
+.founder-image {
+    max-height: 320px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .founder-image {
+        max-height: 250px;
     }
 }

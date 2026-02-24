@@ -29,6 +29,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -152,7 +154,7 @@
     <a class="btn btn-primary py-3 px-4 me-3" href="about.html">
         Learn More
     </a>
-    <a class="btn btn-secondary py-3 px-4" href="donate.html">
+    <a class="btn btn-secondary py-3 px-4" href="donation.html">
         Donate Now
     </a>
 </div>
@@ -175,7 +177,7 @@
                     <div class="carousel-text">
 
                         <h1 class="display-1 text-uppercase mb-3">
-                            Dharam • Sanskar • Seva • 
+                            Dharam  Sanskar  Seva 
                         </h1>
 
                         <p class="fs-5 mb-5">
@@ -187,7 +189,7 @@
     <a class="btn btn-primary py-3 px-4 me-3" href="about.html">
         Learn More
     </a>
-    <a class="btn btn-secondary py-3 px-4" href="donate.html">
+    <a class="btn btn-secondary py-3 px-4" href="donation.html">
         Donate Now
     </a>
 </div>
@@ -222,7 +224,7 @@
                     <a class="btn btn-primary py-3 px-4 me-3" href="about.html">
                         Learn More
                     </a>
-                    <a class="btn btn-secondary py-3 px-4" href="donate.html">
+                    <a class="btn btn-secondary py-3 px-4" href="donation.html">
                         Donate Now
                     </a>
                 </div>
@@ -232,7 +234,7 @@
 
         <div class="col-lg-6">
             <div class="carousel-img">
-                <img class="w-100" src="img/carousel-3.jpg" alt="Education and Sanskar">
+                <img class="w-100" src="img/carousel-3.jpeg" alt="Education and Sanskar">
             </div>
         </div>
     </div>
@@ -257,7 +259,7 @@
                     <a class="btn btn-primary py-3 px-4 me-3" href="about.html">
                         Learn More
                     </a>
-                    <a class="btn btn-secondary py-3 px-4" href="donate.html">
+                    <a class="btn btn-secondary py-3 px-4" href="donation.html">
                         Donate Now
                     </a>
                 </div>
@@ -267,7 +269,7 @@
 
         <div class="col-lg-6">
             <div class="carousel-img">
-                <img class="w-100" src="img/carousel-4.jpg" alt="Education and Sanskar">
+                <img class="w-100" src="img/carousel-4.jpeg" alt="Education and Sanskar">
             </div>
         </div>
     </div>
@@ -402,7 +404,7 @@
                                 समाज के हर वर्ग तक पहुँचाने में सक्षम होते हैं।
                             </p>
 
-                            <a class="btn btn-secondary py-2 px-4" href="donate.html">
+                            <a class="btn btn-secondary py-2 px-4" href="donation.html">
                                 Donate Now
                             </a>
 
@@ -512,7 +514,7 @@
                     <a class="btn btn-primary py-3 px-4 me-3" href="about.html">
                         Learn More
                     </a>
-                    <a class="btn btn-secondary py-3 px-4" href="donate.html">
+                    <a class="btn btn-secondary py-3 px-4" href="donation.html">
                         Donate Now
                     </a>
                 </div>
@@ -565,7 +567,7 @@
                             के माध्यम से समाज में नैतिक मूल्यों का संवर्धन।
                         </p>
 
-                        <a href="donate.html" class="btn btn-primary w-100 py-3">
+                        <a href="donation.html" class="btn btn-primary w-100 py-3">
                             <i class="fa fa-plus me-2"></i>Donate Now
                         </a>
                     </div>
@@ -603,7 +605,7 @@
                             शारीरिक एवं मानसिक रूप से स्वस्थ बनाने का प्रयास।
                         </p>
 
-                        <a href="donate.html" class="btn btn-primary w-100 py-3">
+                        <a href="donation.html" class="btn btn-primary w-100 py-3">
                             <i class="fa fa-plus me-2"></i>Donate Now
                         </a>
                     </div>
@@ -641,7 +643,7 @@
                             एवं सामाजिक सेवा कार्यक्रमों के लिए आपका सहयोग आवश्यक है।
                         </p>
 
-                        <a href="donate.html" class="btn btn-primary w-100 py-3">
+                        <a href="donation.html" class="btn btn-primary w-100 py-3">
                             <i class="fa fa-plus me-2"></i>Donate Now
                         </a>
                     </div>
@@ -739,61 +741,136 @@
         </div>
     </div>
 </div>
-<!-- Donate End -->
-
-<!-- Team Start -->
+<!-- Donate End --><!-- Team Start -->
 <div class="container-fluid py-5">
+
+    <!-- INTERNAL CSS -->
+    <style>
+        .founder-card {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            transition: 0.3s ease;
+        }
+
+        .founder-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .founder-img img {
+            width: 320px;   /* Image size adjustable */
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .founder-content {
+            flex: 1;
+        }
+
+        .founder-content h3 {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .founder-role {
+            color: #d97706;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .founder-content p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .founder-social a {
+            display: inline-block;
+            width: 38px;
+            height: 38px;
+            background: #0d6efd;
+            color: #fff;
+            text-align: center;
+            line-height: 38px;
+            border-radius: 50%;
+            margin-right: 8px;
+            transition: 0.3s;
+        }
+
+        .founder-social a:hover {
+            background: #d97706;
+        }
+
+        /* Responsive */
+        @media (max-width: 991px) {
+            .founder-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .founder-img img {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+
     <div class="container">
-        <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+        <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
             <p class="section-title bg-white text-center text-primary px-3">Founder</p>
             <h1 class="display-6 mb-4">संस्थापक परिचय</h1>
         </div>
 
-        <div class="row justify-content-center g-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 wow fadeIn" data-wow-delay="0.2s">
 
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                <div class="team-item d-flex h-100 p-4">
+                <div class="founder-card shadow-lg">
 
-                    <!-- Founder Detail -->
-                    <div class="team-detail pe-4">
-                        <img class="img-fluid mb-4" src="img/Founder photo.jpeg" alt="Vinod Kumar Deshwal">
-
-                        <h3>Mr. Vinod Kumar Deshwal</h3>
-                        <span>Founder & Spiritual Guide</span>
-
-                        <p class="mt-3 mb-0">
-                            श्री विनोद कुमार देशवाल, M.Sc. (Chemistry), एक अनुभवी 
-                            Health & Nutrition Consultant हैं जिनके पास 35+ वर्षों का अनुभव है। 
-                            वे ISO एवं GMP Auditor रहे हैं तथा health, pharmaceutical एवं 
-                            product innovation sector में नेतृत्व कर चुके हैं।
-                            <br><br>
-                            धार्मिक एवं सामाजिक क्षेत्र में उन्होंने Vyas Ashram Seva Samiti 
-                            में Joint Secretary के रूप में सेवा दी तथा विभिन्न सांस्कृतिक 
-                            एवं धार्मिक कार्यक्रमों का संचालन किया। 
-                            उनका जीवन उद्देश्य Sanatan Dharma, संस्कार, शिक्षा और सेवा 
-                            के माध्यम से समाज को सशक्त एवं नैतिक रूप से समृद्ध बनाना है।
-                        </p>
-
+                    <!-- Left Image -->
+                    <div class="founder-img">
+                        <img src="img/Founder photo.jpeg" alt="Vinod Kumar Deshwal">
                     </div>
 
-                    <!-- Social Links -->
-                    <div class="team-social bg-light d-flex flex-column justify-content-center flex-shrink-0 p-4">
-                        <a class="btn btn-square btn-primary my-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#"><i class="fab fa-x-twitter"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-primary my-2" href="#"><i class="fab fa-youtube"></i></a>
+                    <!-- Right Content -->
+                    <div class="founder-content">
+                        <h3>Mr. Vinod Kumar Deshwal</h3>
+                        <span class="founder-role">Founder & Spiritual Guide</span>
+
+                        <p>
+                            श्री विनोद कुमार देशवाल M.Sc. (Chemistry) एक अनुभवी Health & Nutrition Consultant 
+                            हैं जिनके पास 35+ वर्षों का अनुभव है। ISO एवं GMP Auditor के रूप में उन्होंने 
+                            health, pharmaceutical एवं product innovation क्षेत्रों में नेतृत्व किया है।
+                        </p>
+
+                        <p>
+                            धार्मिक एवं सामाजिक क्षेत्र में उन्होंने विभिन्न सांस्कृतिक व सेवा कार्यक्रमों का संचालन किया।
+                            उनका जीवन उद्देश्य Sanatan Dharma, संस्कार, शिक्षा और सेवा के माध्यम से 
+                            समाज को सशक्त एवं नैतिक रूप से समृद्ध बनाना है।
+                        </p>
+
+                        <!-- Social Icons -->
+                        <div class="founder-social mt-3">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        </div>
+
                     </div>
 
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </div>
 <!-- Team End -->
-
   <!-- Testimonial Start -->
-<div class="container-fluid py-5">
+<!-- <div class="container-fluid py-5">
     <div class="container">
         <div class="row g-5">
             
@@ -807,10 +884,10 @@
             </div>
 
             <div class="col-md-12 col-lg-8 col-xl-9">
-                <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.3s">
+                <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.3s"> -->
 
                     <!-- Testimonial 1 -->
-                    <div class="testimonial-item">
+                    <!-- <div class="testimonial-item">
                         <div class="row g-5 align-items-center">
                             <div class="col-md-6">
                                 <div class="testimonial-img">
@@ -843,10 +920,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Testimonial 2 -->
-                    <div class="testimonial-item">
+                    <!-- <div class="testimonial-item">
                         <div class="row g-5 align-items-center">
                             <div class="col-md-6">
                                 <div class="testimonial-img">
@@ -879,10 +956,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Testimonial 3 -->
-                    <div class="testimonial-item">
+                    <!-- <div class="testimonial-item">
                         <div class="row g-5 align-items-center">
                             <div class="col-md-6">
                                 <div class="testimonial-img">
@@ -923,7 +1000,7 @@
 
         </div>
     </div>
-</div>
+</div> -->
 <!-- Testimonial End -->
 
 
@@ -1013,7 +1090,7 @@
                 <a class="btn btn-link" href="about.html">About Us</a>
                 <a class="btn btn-link" href="projects.html">Our Projects</a>
                 <a class="btn btn-link" href="gallery.html">Gallery</a>
-                <a class="btn btn-link" href="donate.html">Donate</a>
+                <a class="btn btn-link" href="donation.html">Donate</a>
                 <a class="btn btn-link" href="contact.html">Contact Us</a>
             </div>
 
