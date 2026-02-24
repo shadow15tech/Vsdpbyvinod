@@ -88,20 +88,20 @@
 
 .btn-primary:hover {
     background: var(--saffron-deep);
-    box-shadow: 0 6px 20px rgba(230, 81, 0, 0.5);
+    box-shadow: 0 6px 20px rgb(245, 126, 7);
     transform: translateY(-2px);
 }
 
 .btn-secondary {
     background: var(--bs-secondary);
     border: none;
-    color: var(--bs-dark);
-    box-shadow: 0 4px 15px rgba(255, 179, 0, 0.3);
+    color: var(--bs-white);
+    box-shadow: 0 4px 15px rgb(155, 131, 91);
 }
 
 .btn-secondary:hover {
-    background: var(--bs-gold);
-    box-shadow: 0 6px 20px rgba(255, 213, 79, 0.5);
+    background: var(--bs-saffron-deep);
+    box-shadow: 0 6px 20px rgb(237, 168, 9);
     transform: translateY(-2px);
 }
 
@@ -210,13 +210,13 @@
 }
 
 .header-carousel::before {
-    content: "ॐॐॐॐॐॐॐॐॐॐॐॐ ";
+    content: "ॐ🔱";
     position: absolute;
     top: 50%;
     left: 30%;
     transform: translate(-50%, -50%);
-    font-size: 35rem;
-    color: rgb(255, 80, 11);
+    font-size: 15rem;
+    color: rgb(255, 145, 42);
     font-weight: bold;
     z-index: 0;
     pointer-events: none;
@@ -1070,32 +1070,4 @@ FOR GALLERY */
 /* FOUNDER CSS */
 
 
-/* Founder Card Design */
-.founder-card {
-    background: #ffffff;
-    border-left: 6px solid #f57c00;
-    transition: 0.4s ease;
-}
 
-.founder-card:hover {
-    transform: translateY(-6px);
-}
-
-.founder-image-wrapper {
-    background: #f8f9fa;
-    text-align: center;
-    padding: 25px;
-}
-
-.founder-image {
-    max-height: 320px;
-    width: auto;
-    object-fit: contain;
-    border-radius: 12px;
-}
-
-@media (max-width: 768px) {
-    .founder-image {
-        max-height: 250px;
-    }
-}
