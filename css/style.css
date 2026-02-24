@@ -210,13 +210,13 @@
 }
 
 .header-carousel::before {
-    content: "ॐ,ॐ, ";
+    content: "ॐॐॐॐॐॐॐॐॐॐॐॐ ";
     position: absolute;
     top: 50%;
     left: 30%;
     transform: translate(-50%, -50%);
     font-size: 35rem;
-    color: rgba(157, 138, 138, 0.458);
+    color: rgb(255, 80, 11);
     font-weight: bold;
     z-index: 0;
     pointer-events: none;

@@ -40,6 +40,32 @@
     });
 
 
+
+
+    // Header Carousel - Smooth Left to Right
+$(".header-carousel").owlCarousel({
+    autoplay: true,
+    autoplayTimeout: 6000,          // 6 seconds delay
+    autoplaySpeed: 2000,            // smooth slide speed
+    smartSpeed: 2000,               // slide transition speed
+    loop: true,
+    nav: true,
+    dots: false,
+    items: 1,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    animateOut: 'slideOutLeft',
+    animateIn: 'slideInRight',
+    navText: [
+        '<i class="fa fa-angle-left"></i>',
+        '<i class="fa fa-angle-right"></i>'
+    ]
+});
+
+
+
+
     // Modal Video
     $(document).ready(function () {
         var $videoSrc;
