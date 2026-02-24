@@ -200,7 +200,7 @@
         opacity: 1;
     }
 }
-
+        
 
 /*** Header Carousel ***/
 .header-carousel {
@@ -1067,7 +1067,188 @@ FOR GALLERY */
 
 
 
-/* FOUNDER CSS */
+/* INDEX GANESH JI PHOTOS + LOGO DESCRIPTION  */
+/* ============================= */
+/*     Spiritual Section        */
+/* ============================= */
+
+.spiritual-section {
+    background: linear-gradient(135deg, #FFF3E0, #FFE0B2);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle OM Watermark */
+.spiritual-section::before {
+    content: "ॐ";
+    position: absolute;
+    font-size: 22rem;
+    color: rgba(230, 81, 0, 0.05);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Section Content Above Watermark */
+.spiritual-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* ============================= */
+/*        Ganesh Images          */
+/* ============================= */
+
+.ganesh-img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.4s ease;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.ganesh-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 18px 40px rgba(230,81,0,0.35);
+}
+
+/* ============================= */
+/*        Logo Card              */
+/* ============================= */
+
+.logo-card {
+    background: #ffffff;
+    padding: 55px 45px;
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    position: relative;
+    transition: all 0.4s ease;
+    border-top: 5px solid #FF6F00;
+}
+
+.logo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(230,81,0,0.35);
+}
+
+/* Logo Circular Frame */
+.logo-img-wrapper {
+    width: 140px;
+    height: 140px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid #FF6F00;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.logo-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Typography */
+.logo-card h3 {
+    color: #E65100;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.logo-card p {
+    color: #5D4037;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* ============================= */
+/*        Responsive             */
+/* ============================= */
+
+@media (max-width: 991px) {
+    .logo-card {
+        padding: 40px 25px;
+    }
+
+    .ganesh-img {
+        max-height: 230px;
+    }
+}
+
+@media (max-width: 576px) {
+    .spiritual-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .logo-img-wrapper {
+        width: 110px;
+        height: 110px;
+    }
+
+    .logo-card h3 {
+        font-size: 20px;
+    }
+
+    .logo-card p {
+        font-size: 14px;
+    }
+}
 
 
 
+
+
+/* LOGO + GANESH JI IMAGE DESCRIPTION */
+
+
+/* Logo Description Styling */
+
+.logo-intro {
+    font-size: 17px;
+    color: #5D4037;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.logo-points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.logo-points li {
+    background: rgba(255, 111, 0, 0.08);
+    padding: 12px 18px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    color: #4E342E;
+    font-size: 15px;
+    transition: 0.3s ease;
+    position: relative;
+    padding-left: 35px;
+}
+
+.logo-points li::before {
+    content: "🔸";
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    font-size: 14px;
+}
+
+.logo-points li strong {
+    color: #E65100;
+}
+
+.logo-points li:hover {
+    background: rgba(255, 111, 0, 0.18);
+    transform: translateX(5px);
+}
